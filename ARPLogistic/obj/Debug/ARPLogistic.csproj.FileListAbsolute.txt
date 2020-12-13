@@ -1,1 +1,4 @@
 G:\Alvin\ARPLogistic\ARPLogistic\bin\Debug\ARPLogistic.exe.config
+G:\Alvin\ARPLogistic\ARPLogistic\obj\Debug\ARPLogistic.csprojResolveAssemblyReference.cache
+G:\Alvin\ARPLogistic\ARPLogistic\obj\Debug\ARPLogistic.Properties.Resources.resources
+G:\Alvin\ARPLogistic\ARPLogistic\obj\Debug\ARPLogistic.csproj.GenerateResource.Cache
