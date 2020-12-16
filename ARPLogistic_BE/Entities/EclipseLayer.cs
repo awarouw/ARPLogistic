@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ARPLogistic_BE
+namespace ARPLogistic_BE.Entities
 {
     public class EclipseLayer
     {

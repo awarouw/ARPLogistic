@@ -7,7 +7,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ARPLogistic_BE
+namespace ARPLogistic_BE.Entities
 {
     public class ftp
     {

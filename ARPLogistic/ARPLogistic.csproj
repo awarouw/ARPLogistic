@@ -34,7 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,8 +48,99 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administration\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\frmLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration\frmLookup.Designer.cs">
+      <DependentUpon>frmLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\frmLookupWithTop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration\frmLookupWithTop.Designer.cs">
+      <DependentUpon>frmLookupWithTop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\frmOpenCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration\frmOpenCompany.Designer.cs">
+      <DependentUpon>frmOpenCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\frmUpdater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration\frmUpdater.Designer.cs">
+      <DependentUpon>frmUpdater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployee.Designer.cs">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFixedAsset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFixedAsset.Designer.cs">
+      <DependentUpon>frmFixedAsset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocations.Designer.cs">
+      <DependentUpon>frmLocations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransferRoute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransferRoute.Designer.cs">
+      <DependentUpon>frmTransferRoute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mdlGlobal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Administration\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\frmLookup.resx">
+      <DependentUpon>frmLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\frmLookupWithTop.resx">
+      <DependentUpon>frmLookupWithTop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\frmOpenCompany.resx">
+      <DependentUpon>frmOpenCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\frmUpdater.resx">
+      <DependentUpon>frmUpdater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployee.resx">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFixedAsset.resx">
+      <DependentUpon>frmFixedAsset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocations.resx">
+      <DependentUpon>frmLocations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransferRoute.resx">
+      <DependentUpon>frmTransferRoute.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -56,6 +149,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -69,6 +163,50 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ARPLogistic_BE\ARPLogistic_BE.csproj">
+      <Project>{26314ea6-931f-44c7-8a73-61274d7a2774}</Project>
+      <Name>ARPLogistic_BE</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\logoapp.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\logodatar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\wall.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\wall_Development.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="new_logo.ico" />
+    <None Include="Resources\Undo_32x32.png" />
+    <None Include="Resources\Save_32x32.png" />
+    <None Include="Resources\Preview_32x32.png" />
+    <None Include="Resources\Prev_32x32.png" />
+    <None Include="Resources\Next_32x32.png" />
+    <None Include="Resources\Last_32x32.png" />
+    <None Include="Resources\ForceTesting_32x32.png" />
+    <None Include="Resources\First_32x32.png" />
+    <None Include="Resources\Find_32x32.png" />
+    <None Include="Resources\ExportToXLS_32x32.png" />
+    <None Include="Resources\DeleteDataSource_32x32.png" />
+    <None Include="Resources\Copy_32x32.png" />
+    <None Include="Resources\Convert_32x32.png" />
+    <None Include="Resources\Convert_16x16.png" />
+    <None Include="Resources\Content_32x32.png" />
+    <None Include="Resources\Content_16x16.png" />
+    <None Include="Resources\ChartsShowLegend_32x32.png" />
+    <None Include="Resources\AssignTo_32x32.png" />
+    <None Include="Resources\Apply_32x32.png" />
+    <None Include="Resources\Add_32x32.png" />
+    <None Include="Resources\Action_Exit_32x32.png" />
+    <None Include="Resources\Action_Copy_CellValue_32x32.png" />
+    <None Include="Resources\Action_CloseAllWindows_32x32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

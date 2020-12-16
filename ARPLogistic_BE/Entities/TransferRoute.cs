@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ARPLogistic_BE
+namespace ARPLogistic_BE.Entities
 {
     public class TransferRoute : EclipseLayer
     {

@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ARPLogistic_BE
+namespace ARPLogistic_BE.Entities
 {
-    public class Location : EclipseLayer
+    public class Locations : EclipseLayer
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -86,12 +86,12 @@ namespace ARPLogistic_BE
         public string BaseCalendarCode { get; set; }
         public short UseADCS { get; set; }
 
-        public Location ShallowCopy()
+        public Locations ShallowCopy()
         {
-            return (Location)this.MemberwiseClone();
+            return (Locations)this.MemberwiseClone();
         }
 
-        public Location()
+        public Locations()
         {
             this.LocationID = 0;
             this.LocationCode = "";
