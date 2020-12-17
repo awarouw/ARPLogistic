@@ -21,3 +21,4 @@ G:\Alvin\ARPLogistic\ARPLogistic\obj\Debug\ARPLogistic.frmLocations.resources
 G:\Alvin\ARPLogistic\ARPLogistic\obj\Debug\ARPLogistic.Administration.frmLookup.resources
 G:\Alvin\ARPLogistic\ARPLogistic\obj\Debug\ARPLogistic.frmEmployee.resources
 G:\Alvin\ARPLogistic\ARPLogistic\obj\Debug\ARPLogistic_BE.Administration.frmLookupWithTop.resources
+G:\Alvin\ARPLogistic\ARPLogistic\obj\Debug\ARPLogistic.frmTransferRoute.resources

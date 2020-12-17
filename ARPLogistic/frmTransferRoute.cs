@@ -33,6 +33,9 @@ namespace ARPLogistic
 
             Image myimage = new Bitmap(Application.StartupPath + "\\Images\\" + mdlGlobal.companyInformation.LogoFileName);
 
+            da.FillDropDownList("SELECT [LocationCode], [LocationName] FROM [dbo].[Locations] With (NOLOCK) WHERE UseAsInTransit = 0 UNION Select '','' Order By [LocationName] ", cboTransferfromCode);
+            da.FillDropDownList("SELECT [LocationCode], [LocationName] FROM [dbo].[Locations] With (NOLOCK) WHERE UseAsInTransit = 0 UNION Select '','' Order By [LocationName] ", cboTransfertoCode);
+
             fillGrid();
 
         }
