@@ -102,6 +102,12 @@
     <Compile Include="frmLocations.Designer.cs">
       <DependentUpon>frmLocations.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRouteTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRouteTemplate.Designer.cs">
+      <DependentUpon>frmRouteTemplate.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTransferRoute.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLocations.resx">
       <DependentUpon>frmLocations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRouteTemplate.resx">
+      <DependentUpon>frmRouteTemplate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTransferRoute.resx">
       <DependentUpon>frmTransferRoute.cs</DependentUpon>

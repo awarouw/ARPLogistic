@@ -59,6 +59,8 @@
     <Compile Include="BusinessLayer\FixedAssetManagement.cs" />
     <Compile Include="BusinessLayer\LocationManagement.cs" />
     <Compile Include="BusinessLayer\NoSeriesManagement.cs" />
+    <Compile Include="BusinessLayer\RouteTemplateLineManagement.cs" />
+    <Compile Include="BusinessLayer\RouteTemplateManagement.cs" />
     <Compile Include="BusinessLayer\TransferRouteManagement.cs" />
     <Compile Include="Entities\EclipseLayer.cs" />
     <Compile Include="Administration\CompanyInformation.cs" />
@@ -76,6 +78,10 @@
     <Compile Include="Administration\Global.cs" />
     <Compile Include="Entities\NoSeries.cs" />
     <Compile Include="Entities\NoSeriesLine.cs" />
+    <Compile Include="Entities\RouteTemplate.cs" />
+    <Compile Include="Entities\RouteTemplateLine.cs" />
+    <Compile Include="Entities\RouteTrx.cs" />
+    <Compile Include="Entities\RouteTrxLine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entities\TransferRoute.cs" />
     <Compile Include="Administration\TransactionManager.cs" />
