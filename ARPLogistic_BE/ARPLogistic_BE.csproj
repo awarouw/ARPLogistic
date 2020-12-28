@@ -61,6 +61,8 @@
     <Compile Include="BusinessLayer\NoSeriesManagement.cs" />
     <Compile Include="BusinessLayer\RouteTemplateLineManagement.cs" />
     <Compile Include="BusinessLayer\RouteTemplateManagement.cs" />
+    <Compile Include="BusinessLayer\RouteTrxLineManagement.cs" />
+    <Compile Include="BusinessLayer\RouteTrxManagement.cs" />
     <Compile Include="BusinessLayer\TransferRouteManagement.cs" />
     <Compile Include="Entities\EclipseLayer.cs" />
     <Compile Include="Administration\CompanyInformation.cs" />
